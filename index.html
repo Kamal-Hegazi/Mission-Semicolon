@@ -78,8 +78,8 @@
                         <p class="text-blue-400 mb-4">Core Member</p>
                         <p class="mb-4">cybersecurity enthusiast and seasoned CTF player with broad interests across the IT field.</p>
                         <div class="flex justify-center space-x-4 text-2xl">
-                            <a href="https://github.com/Kamal-Hegazi" aria-label="Kamal's Github" class="hover:text-blue-400"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/kamalhegazi/" aria-label="Kamal's LinkedIn" class="hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/Kamal-Hegazi" target="_blank" aria-label="Kamal's Github" class="hover:text-blue-400"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/kamalhegazi/" target="_blank" aria-label="Kamal's LinkedIn" class="hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                     <!-- Member Card 2 -->
@@ -89,8 +89,8 @@
                         <p class="text-blue-400 mb-4">Core Member</p>
                         <p class="mb-4">math enthusiast with a strong passion for machine learning and AI, driven to explore intelligent systems and data-driven solutions.</p>
                         <div class="flex justify-center space-x-4 text-2xl">
-                            <a href="https://github.com/Vseif1011" aria-label="Seif's Github" class="hover:text-blue-400"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/seif-eldeen-mostafa-4a6800332/" aria-label="Seif's LinkedIn" class="hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/Vseif1011" target="_blank" aria-label="Seif's Github" class="hover:text-blue-400"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/seif-eldeen-mostafa-4a6800332/" target="_blank" aria-label="Seif's LinkedIn" class="hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                     <!-- Member Card 3 -->
@@ -100,8 +100,8 @@
                         <p class="text-blue-400 mb-4">Core Member</p>
                         <p class="mb-4">passionate software engineer skilled in Flutter and .NET, dedicated to building efficient, user-friendly applications.</p>
                         <div class="flex justify-center space-x-4 text-2xl">
-                            <a href="https://github.com/amrSherif12" aria-label="Amr's Github" class="hover:text-blue-400"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/amr-sherif-163549299/" aria-label="Amr's LinkedIn" class="hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/amrSherif12" target="_blank" aria-label="Amr's Github" class="hover:text-blue-400"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/amr-sherif-163549299/" target="_blank" aria-label="Amr's LinkedIn" class="hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
@@ -137,6 +137,8 @@
                         <div class="order-1 bg-slate-800 rounded-lg shadow-xl w-5/12 px-6 py-4">
                             <h3 class="mb-3 font-bold text-white text-xl">ECPC 2025 Qualifiers</h3>
                             <p class="text-sm leading-snug tracking-wide text-slate-400 text-opacity-100">Our team's first major competition, setting the stage for future success.</p>
+                            <p class="text-sm leading-snug tracking-wide text-slate-400 text-opacity-100">Placed 16th out of more than 200 teams.</p>
+
                         </div>
                     </div>
                     <!-- Timeline Item (Right) -->
@@ -344,20 +346,6 @@
             });
         }
 
-        // Team Member Flip Card Logic
-        const memberCards = document.querySelectorAll('.member-card');
-        memberCards.forEach(card => {
-            card.addEventListener('click', (e) => {
-                // Prevent card flip when clicking on a link inside
-                if (e.target.tagName === 'A') return;
-                
-                const innerCard = card.querySelector('.preserve-3d');
-                if (innerCard) {
-                    innerCard.classList.toggle('is-flipped');
-                }
-            });
-        });
-
         // Gallery Modal Logic
         const modal = document.getElementById('gallery-modal');
         if (modal) {
@@ -406,21 +394,6 @@
                     if (e.key === 'ArrowLeft') prevBtn.click();
                     if (e.key === 'ArrowRight') nextBtn.click();
                 }
-            });
-        }
-
-        // Cookie Consent Banner
-        const consentBanner = document.getElementById('cookie-consent-banner');
-        const acceptCookiesBtn = document.getElementById('accept-cookies');
-        if (consentBanner && acceptCookiesBtn) {
-            if (!localStorage.getItem('cookiesAccepted')) {
-                setTimeout(() => {
-                    consentBanner.classList.remove('hidden');
-                }, 1000);
-            }
-            acceptCookiesBtn.addEventListener('click', () => {
-                consentBanner.classList.add('hidden');
-                localStorage.setItem('cookiesAccepted', 'true');
             });
         }
 
