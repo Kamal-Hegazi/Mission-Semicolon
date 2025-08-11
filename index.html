@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Semicolon - E-JUST</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300">
+    <!-- Hero Section -->
+    <section id="hero" class="h-screen bg-cover bg-center flex items-center justify-center text-white" style="background-image: linear-gradient(rgba(26, 32, 44, 0.7), rgba(26, 32, 44, 0.7)), url('images/hero-bg.jpg');">
+        <div class="text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">Mission Semicolon</h1>
+            <p class="text-lg md:text-2xl mb-8">Competitive Minds, Cooperative Hearts.</p>
+            <a href="#about" class="bg-transparent border-2 border-blue-400 text-blue-400 font-bold py-3 px-6 rounded-lg hover:bg-blue-400 hover:text-slate-900 transition-all duration-300 inline-flex items-center">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="bg-slate-800/80 backdrop-blur-sm sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-white">Mission Semicolon</a>
+            <div class="hidden md:flex space-x-6 text-lg">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#members" class="hover:text-blue-400 transition">Members</a>
+                <a href="#achievements" class="hover:text-blue-400 transition">Achievements</a>
+                <a href="#events" class="hover:text-blue-400 transition">Events</a>
+                <a href="#gallery" class="hover:text-blue-400 transition">Gallery</a>
+                <a href="#resources" class="hover:text-blue-400 transition">Resources</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="hamburger-button" class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="#about" class="block hover:text-blue-400 transition">About</a>
+            <a href="#members" class="block hover:text-blue-400 transition">Members</a>
+            <a href="#achievements" class="block hover:text-blue-400 transition">Achievements</a>
+            <a href="#events" class="block hover:text-blue-400 transition">Events</a>
+            <a href="#gallery" class="block hover:text-blue-400 transition">Gallery</a>
+            <a href="#resources" class="block hover:text-blue-400 transition">Resources</a>
+            <a href="#contact" class="block hover:text-blue-400 transition">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- About Us Section -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-white mb-4">About Us</h2>
+                <p class="max-w-3xl mx-auto text-lg">Welcome to the official website of Mission Semicolon, a passionate group of competitive programmers from the Egypt-Japan University of Science and Technology (E-JUST).</p>
+            </div>
+        </section>
+
+        <section id="team" class="py-20 bg-slate-800 fade-in-section opacity-0 transition-all duration-1000">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-white text-center mb-12">Team Members</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Member Card 1 -->
+                    <div class="bg-slate-700 rounded-lg p-6 text-center">
+                        <img data-src="images/team-members/kamal.jpg" alt="Kamal Hegazi" class="w-28 h-28 rounded-full mb-4 object-cover mx-auto">
+                        <h3 class="text-2xl font-bold text-white">Kamal Hegazi</h3>
+                        <p class="text-blue-400 mb-4">Core Member</p>
+                        <p class="mb-4">cybersecurity enthusiast and seasoned CTF player with broad interests across the IT field.</p>
+                        <div class="flex justify-center space-x-4 text-2xl">
+                            <a href="https://github.com/Kamal-Hegazi" aria-label="Kamal's Github" class="hover:text-blue-400"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/kamalhegazi/" aria-label="Kamal's LinkedIn" class="hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <!-- Member Card 2 -->
+                    <div class="bg-slate-700 rounded-lg p-6 text-center">
+                        <img data-src="images/team-members/seif.jpg" alt="Seif-Eldeen Mostafa" class="w-28 h-28 rounded-full mb-4 object-cover mx-auto">
+                        <h3 class="text-2xl font-bold text-white">Seif-Eldeen Mostafa</h3>
+                        <p class="text-blue-400 mb-4">Core Member</p>
+                        <p class="mb-4">math enthusiast with a strong passion for machine learning and AI, driven to explore intelligent systems and data-driven solutions.</p>
+                        <div class="flex justify-center space-x-4 text-2xl">
+                            <a href="https://github.com/Vseif1011" aria-label="Seif's Github" class="hover:text-blue-400"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/seif-eldeen-mostafa-4a6800332/" aria-label="Seif's LinkedIn" class="hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <!-- Member Card 3 -->
+                    <div class="bg-slate-700 rounded-lg p-6 text-center">
+                        <img data-src="images/team-members/amr.png" alt="Amr Sherif" class="w-28 h-28 rounded-full mb-4 object-cover mx-auto">
+                        <h3 class="text-2xl font-bold text-white">Amr Sherif</h3>
+                        <p class="text-blue-400 mb-4">Core Member</p>
+                        <p class="mb-4">passionate software engineer skilled in Flutter and .NET, dedicated to building efficient, user-friendly applications.</p>
+                        <div class="flex justify-center space-x-4 text-2xl">
+                            <a href="https://github.com/amrSherif12" aria-label="Amr's Github" class="hover:text-blue-400"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/amr-sherif-163549299/" aria-label="Amr's LinkedIn" class="hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="py-20 fade-in-section opacity-0 transition-all duration-1000">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-white text-center mb-12">Our Achievements</h2>
+                <div class="flex flex-wrap justify-center text-center gap-8">
+                    <div class="bg-slate-800 p-6 rounded-lg w-64">
+                        <i class="fas fa-medal text-blue-400 text-4xl mb-4"></i>
+                        <h3 class="text-2xl font-bold text-white">Finalist</h3>
+                        <p>ECPC 2025</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Timeline Section -->
+        <section id="events" class="py-20 fade-in-section opacity-0 transition-all duration-1000">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-white text-center mb-12">Our Journey</h2>
+                <div class="relative wrap overflow-hidden p-10 h-full">
+                    <div class="border-2-2 absolute border-opacity-20 border-blue-400 h-full border" style="left: 50%"></div>
+                    <!-- Timeline Item (Left) -->
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-slate-800 shadow-xl w-8 h-8 rounded-full">
+                            <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+                        </div>
+                        <div class="order-1 bg-slate-800 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <h3 class="mb-3 font-bold text-white text-xl">ECPC 2025 Qualifiers</h3>
+                            <p class="text-sm leading-snug tracking-wide text-slate-400 text-opacity-100">Our team's first major competition, setting the stage for future success.</p>
+                        </div>
+                    </div>
+                    <!-- Timeline Item (Right) -->
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-slate-800 shadow-xl w-8 h-8 rounded-full">
+                            <h1 class="mx-auto text-white font-semibold text-lg">2</h1>
+                        </div>
+                        <div class="order-1 bg-slate-800 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <h3 class="mb-3 font-bold text-white text-xl">ECPC 2025</h3>
+                            <p class="text-sm leading-snug tracking-wide text-slate-400 text-opacity-100"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-20 bg-slate-800 fade-in-section opacity-0 transition-all duration-1000">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-white text-center mb-12">Gallery</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <img data-src="images/gallery/1.jpg" alt="Gallery image 1" class="gallery-item w-full h-full object-cover rounded-lg cursor-pointer hover:opacity-75 transition-opacity lazy">
+                    <img data-src="images/gallery/2.jpg" alt="Gallery image 2" class="gallery-item w-full h-full object-cover rounded-lg cursor-pointer hover:opacity-75 transition-opacity lazy">
+                    <img data-src="images/gallery/3.jpg" alt="Gallery image 3" class="gallery-item w-full h-full object-cover rounded-lg cursor-pointer hover:opacity-75 transition-opacity lazy">
+                    <img data-src="images/gallery/4.jpg" alt="Gallery image 4" class="gallery-item w-full h-full object-cover rounded-lg cursor-pointer hover:opacity-75 transition-opacity lazy">
+                    <img data-src="images/gallery/5.jpg" alt="Gallery image 5" class="gallery-item w-full h-full object-cover rounded-lg cursor-pointer hover:opacity-75 transition-opacity lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-white text-center mb-12">Resources</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <a href="https://codeforces.com/" target="_blank" class="bg-slate-800 p-6 rounded-lg text-center hover:bg-slate-700 transition">
+                        <i class="fas fa-trophy text-blue-400 text-4xl mb-4"></i>
+                        <h3 class="text-xl font-bold text-white">Codeforces</h3>
+                    </a>
+                    <a href="https://www.topcoder.com/" target="_blank" class="bg-slate-800 p-6 rounded-lg text-center hover:bg-slate-700 transition">
+                        <i class="fas fa-laptop-code text-blue-400 text-4xl mb-4"></i>
+                        <h3 class="text-xl font-bold text-white">TopCoder</h3>
+                    </a>
+                    <a href="https://cp-algorithms.com/" target="_blank" class="bg-slate-800 p-6 rounded-lg text-center hover:bg-slate-700 transition">
+                        <i class="fas fa-book-open text-blue-400 text-4xl mb-4"></i>
+                        <h3 class="text-xl font-bold text-white">CP-Algorithms</h3>
+                    </a>
+                    <a href="https://www.geeksforgeeks.org/competitive-programming-a-complete-guide/" target="_blank" class="bg-slate-800 p-6 rounded-lg text-center hover:bg-slate-700 transition">
+                        <i class="fas fa-graduation-cap text-blue-400 text-4xl mb-4"></i>
+                        <h3 class="text-xl font-bold text-white">GeeksforGeeks</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-slate-800 fade-in-section opacity-0 transition-all duration-1000">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-white text-center mb-12">Get In Touch</h2>
+                <form class="contact-form max-w-xl mx-auto" novalidate>
+                    <div class="mb-4">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required class="w-full p-3 bg-slate-700 rounded-lg border border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
+                        <span class="error-message text-red-400 text-sm mt-1"></span>
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required class="w-full p-3 bg-slate-700 rounded-lg border border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
+                        <span class="error-message text-red-400 text-sm mt-1"></span>
+                    </div>
+                    <div class="mb-4">
+                        <textarea id="message" name="message" placeholder="Your Message" required rows="4" class="w-full p-3 bg-slate-700 rounded-lg border border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"></textarea>
+                        <span class="error-message text-red-400 text-sm mt-1"></span>
+                    </div>
+                    <div class="success-message text-green-400 text-center mb-4"></div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 pt-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="footer-about">
+                    <h3 class="text-2xl font-bold text-white mb-4">Mission Semicolon</h3>
+                    <p class="text-slate-400">A passionate team of competitive programmers from E-JUST, dedicated to problem-solving and innovation.</p>
+                </div>
+                <div class="footer-links">
+                    <h3 class="text-xl font-bold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-blue-400 transition">About</a></li>
+                        <li><a href="#members" class="hover:text-blue-400 transition">Team</a></li>
+                        <li><a href="#events" class="hover:text-blue-400 transition">Journey</a></li>
+                        <li><a href="#gallery" class="hover:text-blue-400 transition">Gallery</a></li>
+                        <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3 class="text-xl font-bold text-white mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" aria-label="Visit our Github" class="text-2xl hover:text-blue-400 transition"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Visit our Linkedin" class="text-2xl hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Visit our Twitter" class="text-2xl hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center py-6 mt-8 border-t border-slate-800">
+                <p>&copy; <span id="copyright-year"></span> Mission Semicolon. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top" aria-label="Go to top of page" class="hidden fixed bottom-8 right-8 bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-blue-700 transition-all duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </a>
+
+    <!-- Gallery Modal -->
+    <div id="gallery-modal" class="hidden fixed inset-0 bg-black/80 z-50 flex items-center justify-center">
+        <span id="close-modal" aria-label="Close gallery modal" class="absolute top-4 right-6 text-white text-4xl cursor-pointer">&times;</span>
+        <a id="prev-image" aria-label="Previous image" class="absolute left-8 text-white text-4xl cursor-pointer">&#10094;</a>
+        <a id="next-image" aria-label="Next image" class="absolute right-8 text-white text-4xl cursor-pointer">&#10095;</a>
+        <img class="max-w-[90vw] max-h-[90vh]" id="modal-image" alt="Gallery modal image">
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // --- UI & UX ENHANCEMENTS ---
+
+        // Set Copyright Year
+        const copyrightYear = document.getElementById('copyright-year');
+        if (copyrightYear) {
+            copyrightYear.textContent = new Date().getFullYear();
+        }
+
+        // Back to Top Button Logic
+        const backToTopButton = document.getElementById('back-to-top');
+        if (backToTopButton) {
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) { // Show button after scrolling 300px
+                    backToTopButton.classList.remove('hidden');
+                } else {
+                    backToTopButton.classList.add('hidden');
+                }
+            });
+            backToTopButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+        // --- INTERSECTION OBSERVER FOR ANIMATIONS & LAZY LOADING ---
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Handle scroll animations
+                    if (entry.target.classList.contains('fade-in-section')) {
+                        entry.target.classList.remove('opacity-0');
+                        entry.target.classList.add('opacity-100');
+                    }
+                    
+                    // Handle lazy loading for images
+                    if (entry.target.tagName === 'IMG' && entry.target.dataset.src) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.removeAttribute('data-src');
+                        img.onload = () => {
+                            img.classList.add('loaded');
+                        };
+                    }
+                    
+                    // Stop observing the element after it has been handled
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 }); // Trigger when 10% of the element is visible
+
+        // Observe sections for animations
+        document.querySelectorAll('.fade-in-section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Observe images for lazy loading
+        document.querySelectorAll('img[data-src]').forEach(img => {
+            observer.observe(img);
+        });
+
+
+        // --- INTERACTIVE COMPONENT LOGIC ---
+
+        // Hamburger Menu Logic
+        const hamburgerButton = document.getElementById('hamburger-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (hamburgerButton && mobileMenu) {
+            const navLinks = mobileMenu.querySelectorAll('a');
+            hamburgerButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+
+        // Team Member Flip Card Logic
+        const memberCards = document.querySelectorAll('.member-card');
+        memberCards.forEach(card => {
+            card.addEventListener('click', (e) => {
+                // Prevent card flip when clicking on a link inside
+                if (e.target.tagName === 'A') return;
+                
+                const innerCard = card.querySelector('.preserve-3d');
+                if (innerCard) {
+                    innerCard.classList.toggle('is-flipped');
+                }
+            });
+        });
+
+        // Gallery Modal Logic
+        const modal = document.getElementById('gallery-modal');
+        if (modal) {
+            const modalImg = document.getElementById('modal-image');
+            const galleryImages = Array.from(document.querySelectorAll('.gallery-item'));
+            const closeModalBtn = document.getElementById('close-modal');
+            const prevBtn = document.getElementById('prev-image');
+            const nextBtn = document.getElementById('next-image');
+            let currentImageIndex;
+
+            const showImage = (index) => {
+                if (index >= 0 && index < galleryImages.length) {
+                    modalImg.src = galleryImages[index].src;
+                    currentImageIndex = index;
+                }
+            };
+
+            galleryImages.forEach((img, index) => {
+                img.addEventListener('click', () => {
+                    modal.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden'; // Prevent background scroll
+                    showImage(index);
+                });
+            });
+
+            const closeModal = () => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = ''; // Restore background scroll
+            };
+
+            closeModalBtn.addEventListener('click', closeModal);
+            prevBtn.addEventListener('click', () => {
+                const newIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+                showImage(newIndex);
+            });
+            nextBtn.addEventListener('click', () => {
+                const newIndex = (currentImageIndex + 1) % galleryImages.length;
+                showImage(newIndex);
+            });
+            modal.addEventListener('click', (event) => {
+                if (event.target === modal) closeModal();
+            });
+            document.addEventListener('keydown', (e) => {
+                if (!modal.classList.contains('hidden')) {
+                    if (e.key === 'Escape') closeModal();
+                    if (e.key === 'ArrowLeft') prevBtn.click();
+                    if (e.key === 'ArrowRight') nextBtn.click();
+                }
+            });
+        }
+
+        // Cookie Consent Banner
+        const consentBanner = document.getElementById('cookie-consent-banner');
+        const acceptCookiesBtn = document.getElementById('accept-cookies');
+        if (consentBanner && acceptCookiesBtn) {
+            if (!localStorage.getItem('cookiesAccepted')) {
+                setTimeout(() => {
+                    consentBanner.classList.remove('hidden');
+                }, 1000);
+            }
+            acceptCookiesBtn.addEventListener('click', () => {
+                consentBanner.classList.add('hidden');
+                localStorage.setItem('cookiesAccepted', 'true');
+            });
+        }
+
+        // Contact Form Validation
+        const contactForm = document.querySelector('.contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                let isValid = true;
+                const name = document.getElementById('name');
+                const email = document.getElementById('email');
+                const message = document.getElementById('message');
+                const nameError = name.nextElementSibling;
+                const emailError = email.nextElementSibling;
+                const messageError = message.nextElementSibling;
+                const successMessage = contactForm.querySelector('.success-message');
+            successMessage.className = 'success-message text-sm mt-2'; // Reset class
+
+                // Reset states
+                [nameError, emailError, messageError, successMessage].forEach(el => el.textContent = '');
+                [name, email, message].forEach(el => el.classList.remove('border-red-400'));
+
+                if (name.value.trim() === '') {
+                    nameError.textContent = 'Name is required.';
+                    name.classList.add('border-red-400');
+                    isValid = false;
+                }
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(email.value)) {
+                    emailError.textContent = 'Please enter a valid email address.';
+                    email.classList.add('border-red-400');
+                    isValid = false;
+                }
+                if (message.value.trim() === '') {
+                    messageError.textContent = 'Message cannot be empty.';
+                    message.classList.add('border-red-400');
+                    isValid = false;
+                }
+                if (isValid) {
+                    successMessage.textContent = 'Thank you! Your message has been sent.';
+                successMessage.classList.add('text-green-400');
+                    contactForm.reset();
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>
