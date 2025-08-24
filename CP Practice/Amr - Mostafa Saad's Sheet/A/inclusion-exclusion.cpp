@@ -48,3 +48,65 @@ int main() {
 
     cout << count << endl;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// 3 divisors
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+long long gcd(long long a, long long b) {
+    return b == 0 ? a : gcd(b, a % b);
+}
+
+long long lcm(long long a, long long b) {
+    return (a / gcd(a, b)) * b;
+}
+
+int main() {
+    long long n;
+    int k;
+    cin >> n >> k; // range 1..n and number of divisors
+
+    vector<long long> d(k);
+    for (int i = 0; i < k; i++) cin >> d[i];
+
+    long long count = 0;
+
+    // subsets of size 1
+    for (int i = 0; i < k; i++) {
+        long long l = d[i];
+        if (l <= n) count += n / l; // add because odd size
+    }
+
+    // subsets of size 2
+    for (int i = 0; i < k; i++) {
+        for (int j = i + 1; j < k; j++) {
+            long long l = lcm(d[i], d[j]);
+            if (l <= n) count -= n / l; // subtract because even size
+        }
+    }
+
+    // subsets of size 3
+    for (int i = 0; i < k; i++) {
+        for (int j = i + 1; j < k; j++) {
+            for (int m = j + 1; m < k; m++) {
+                long long l = lcm(lcm(d[i], d[j]), d[m]);
+                if (l <= n) count += n / l; // add because odd size
+            }
+        }
+    }
+
+    cout << count << endl;
+}
